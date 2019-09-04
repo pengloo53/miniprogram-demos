@@ -1,0 +1,29 @@
+/* pages/canvas/canvas.wxss */
+.form_desc{
+  margin-top: 50rpx;
+  padding-left: 30rpx;
+  padding-bottom: 10rpx;
+  font-size: 0.9em;
+  color: #aaa;
+  border-bottom: 1px solid #eee;
+}
+
+.form_cell{
+  margin-left: 30rpx;
+  border-bottom: 1px solid #eee;
+  position: relative; 
+  height: 80rpx;
+}
+
+.form_text{
+  float: left;
+  position: relative;
+  top: 18rpx;
+}
+
+.form_switch{
+  float: right;
+  position: relative;
+  right: 30rpx;
+  top: 10rpx;
+}

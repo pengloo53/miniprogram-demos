@@ -1,7 +1,11 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/address/address",
+    "pages/days/index",
+    "pages/days/share",
+    "pages/canvas/canvas"
   ],
   "window": {
     "backgroundTextStyle": "light",

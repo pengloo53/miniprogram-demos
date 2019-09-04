@@ -1,0 +1,14 @@
+<!--pages/address/address.wxml-->
+<scroll-view scroll-y>
+<block wx:for="{{ lists }}" wx:key="{{ index }}" wx:for-index="index">
+  <view class="list" bindtap='gotoLocation' data-index="{{ index }}" data-latitude="{{ item.latitude }}" data-longitude="{{ item.longitude }}" data-title="{{ item.title }}" data-address="{{ item.address }}" bindlongpress="del">
+    <view class="title">{{ item.title }}</view>
+    <view class="access"></view>
+    <view class="desc">{{ item.address }}</view>
+  </view>
+</block>
+</scroll-view>
+
+<view class="bottom_btn">
+  <button type="primary" bindtap='add'>添加常用地址</button>
+</view>

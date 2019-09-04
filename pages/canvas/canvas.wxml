@@ -1,0 +1,12 @@
+<!--pages/canvas/canvas.wxml-->
+<canvas style="width: 100%; height: 200px;" canvas-id="firstCanvas"></canvas>
+<view class="form_desc">定制卡片</view>
+<view class="form_cell">
+    <view class="form_text">是否显示目标日</view>
+    <view class="form_switch">
+        <switch bindchange="switchChange" checked />
+    </view>
+</view>
+<view class="bottom_btn">
+  <button type="warn" bindtap="saveToImg" loading='{{ isLoading }}' disabled='{{ isDisable }}'>保存卡片</button>
+</view>

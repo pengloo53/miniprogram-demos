@@ -7,7 +7,13 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto">
+  <!-- <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
+  </view> -->
+  <view style="margin-top: 30rpx; padding: 10rpx 20rpx; background-color:#eeeeee">
+    <navigator url="../address/address">收藏地址</navigator>
+  </view>
+  <view style="margin-top: 30rpx; padding: 10rpx 20rpx; background-color:#eeeeee">
+    <navigator url="../canvas/canvas">canvas</navigator>
   </view>
 </view>

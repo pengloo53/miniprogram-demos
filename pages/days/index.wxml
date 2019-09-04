@@ -1,0 +1,7 @@
+<!--pages/days/index.wxml-->
+<view class="list" bindtap='goto' data-title="{{ title }}" data-date="{{ date }}">
+  <view class="title">{{ title }}</view>
+  <view class="date-number {{ isPast?'primary':'danger' }}">{{ number }}</view>
+  <view class="date-desc">{{ isPast?"已过天数":"还剩天数" }}</view>
+  <view class="desc">{{ date }}</view>
+</view>
