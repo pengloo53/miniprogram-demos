@@ -106,7 +106,18 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    let title = options.title;
+    let date = options.date;
+    let isPast = options.isPast;
+    let number = options.number;
+    if(title && date){
+      this.setData({
+        title,
+        date,
+        isPast,
+        number
+      })
+    }
   },
 
   /**

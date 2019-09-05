@@ -10,10 +10,16 @@
   <!-- <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view> -->
+  <!-- first -->
   <view style="margin-top: 30rpx; padding: 10rpx 20rpx; background-color:#eeeeee">
     <navigator url="../address/address">收藏地址</navigator>
   </view>
+  <!-- canvas -->
   <view style="margin-top: 30rpx; padding: 10rpx 20rpx; background-color:#eeeeee">
     <navigator url="../canvas/canvas">canvas</navigator>
+  </view>
+  <!-- 传参 -->
+  <view style="margin-top: 30rpx; padding: 10rpx 20rpx; background-color:#eeeeee">
+    <navigator url="../days/index">传参到 canvas</navigator>
   </view>
 </view>

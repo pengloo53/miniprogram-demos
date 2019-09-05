@@ -5,13 +5,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-    date: '1949-10-01',
-    title: '新中国成立',
-    isPast: true,
-    number: 25540
+    date: '2019-10-01',
+    title: '新中国成立 70 周年',
+    isPast: false,
+    number: 26
   },
   goto: function(e){
-    // let date = e.currentTarget.
+    let date = e.currentTarget.dataset.date;
+    let title = e.currentTarget.dataset.title;
+    let isPast = e.currentTarget.dataset.ispast; // 注意这里的参数名
+    let number = e.currentTarget.dataset.number;
+    console.log(e.currentTarget.dataset); // 打印出来试试
+    wx.navigateTo({
+      url: '../canvas/canvas?title=' + title + '&date=' + date + '&isPast' + isPast + '&number=' + number
+    })
   },
 
   /**
