@@ -1,0 +1,23 @@
+{
+  "name": "miniprogram-demos",
+  "version": "1.0.0",
+  "description": "微信小程序系列文章代码示例。",
+  "main": "app.js",
+  "dependencies": {
+    "dayjs": "^1.8.16"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pengloo53/miniprogram-demos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pengloo53/miniprogram-demos/issues"
+  },
+  "homepage": "https://github.com/pengloo53/miniprogram-demos#readme"
+}

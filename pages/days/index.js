@@ -1,14 +1,22 @@
 // pages/days/index.js
+const dayjs = require('dayjs');
+const today = dayjs().format('YYYY-MM-DD');
+const init_data = function(day){
+  let date = day.date;
+  day.isPast = today > date;
+  day.number = dayjs(date).diff(dayjs(today), 'day');
+  return day;
+}
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    date: '2019-10-01',
-    title: '新中国成立 70 周年',
-    isPast: false,
-    number: 26
+    day: {
+      date: '2019-10-01',
+      title: '新中国成立 70 周年'
+    }
   },
   goto: function(e){
     let date = e.currentTarget.dataset.date;
@@ -25,21 +33,23 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.setData({
+      day: init_data(this.data.day)
+    });
   },
 
   /**
