@@ -4,7 +4,8 @@
     "pages/logs/logs",
     "pages/address/address",
     "pages/days/index",
-    "pages/canvas/canvas"
+    "pages/canvas/canvas",
+    "pages/request/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
