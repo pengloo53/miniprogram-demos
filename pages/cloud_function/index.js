@@ -1,33 +1,11 @@
-// pages/request/index.js
-const { showapi_appid, showapi_sign } = require('./self.config.js');
-const request_data = function(callback) {
-  wx.request({
-    url: 'https://route.showapi.com/119-42',
-    data: {
-      showapi_appid,
-      showapi_sign
-    },
-    header: {
-      'content-type': 'application/json'
-    },
-    success: res => {
-      var showapiData = res.data.showapi_res_body.list;
-      callback(showapiData);
-    }
-  })
-}
+// pages/cloudfunction/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    lists: [
-      {
-        title: '你好呀',
-        date: '你好呀'
-      }
-    ]
+
   },
 
   /**
@@ -35,20 +13,17 @@ Page({
    */
   onLoad: function (options) {
     wx.showLoading({
-      title: '加载中'
-    })
-    request_data(res => {
-      this.setData({
-        lists: res
-      });
-      wx.hideLoading();
-      // wx.setStorage({
-      //   key: 'historyList',
-      //   data: {
-      //     date: that.data.currentDate,
-      //     list: showapiData
-      //   }
-      // })
+      title: '加载中',
+    });
+    wx.cloud.callFunction({
+      name: 'history',
+      complete: res => {
+        wx.hideLoading();
+        let result = JSON.parse(res.result);
+        this.setData({
+          lists: result.showapi_res_body.list
+        });
+      }
     });
   },
 
@@ -57,7 +32,7 @@ Page({
    */
   onReady: function () {
     wx.setNavigationBarTitle({
-      title: 'request 请求',
+      title: '云函数请求',
     })
   },
 

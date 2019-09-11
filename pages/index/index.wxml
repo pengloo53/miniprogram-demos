@@ -20,10 +20,18 @@
   </view>
   <!-- 传参 -->
   <view style="margin-top: 30rpx; padding: 10rpx 20rpx; background-color:#eeeeee">
-    <navigator url="../days/index">传参到 canvas</navigator>
+    <navigator url="../send_params/index">传参到 canvas</navigator>
   </view>
   <!-- 网络请求 -->
   <view style="margin-top: 30rpx; padding: 10rpx 20rpx; background-color:#eeeeee">
     <navigator url="../request/index">网络请求</navigator>
+  </view>
+  <!-- 云函数请求 -->
+  <view style="margin-top: 30rpx; padding: 10rpx 20rpx; background-color:#eeeeee">
+    <navigator url="../cloud_function/index">云函数请求</navigator>
+  </view>
+  <!-- 云数据库 -->
+  <view style="margin-top: 30rpx; padding: 10rpx 20rpx; background-color:#eeeeee">
+    <navigator url="../cloud_database/index">云数据库</navigator>
   </view>
 </view>

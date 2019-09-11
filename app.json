@@ -3,9 +3,11 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/address/address",
-    "pages/days/index",
+    "pages/send_params/index",
     "pages/canvas/canvas",
-    "pages/request/index"
+    "pages/request/index",
+    "pages/cloud_function/index",
+    "pages/cloud_database/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
