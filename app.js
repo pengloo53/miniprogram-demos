@@ -1,10 +1,11 @@
 //app.js
 const { env_test, env_production } = require('./self.config.js');
+let env = env_test;
 App({
   onLaunch: function () {
     // 初始化云开发
     wx.cloud.init({
-      env: env_test
+      env
     });
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
@@ -39,6 +40,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    env
   }
 })
