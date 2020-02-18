@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "list-2p": "/components/list-2p/list-2p",
+    "list-4p": "/components/list-4p/list-4p"
+  }
+}

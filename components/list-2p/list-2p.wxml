@@ -1,0 +1,8 @@
+<!--components/list-2p/list-2p.wxml-->
+<block wx:for="{{ lists }}" wx:key="{{ index }}" wx:for-index="index">
+  <view class="list" bindtap='{{tap}}' data-index="{{ index }}" data-title="{{ item.title }}" data-desc="{{ item.desc }}" bindlongpress="{{press}}">
+    <view class="title">{{ item.title }}</view>
+    <view class="access"></view>
+    <view class="desc">{{ item.desc }}</view>
+  </view>
+</block>

@@ -1,0 +1,2 @@
+<!--pages/component/index.wxml-->
+<list-2p lists="{{ lists }}" ></list-2p>

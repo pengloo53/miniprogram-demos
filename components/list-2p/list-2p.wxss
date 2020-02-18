@@ -1,0 +1,38 @@
+/* components/list-2p/list-2p.wxss */
+.list{
+  background-color: #ffffff;
+  position: relative;
+  padding: 20rpx;
+  border-bottom: 1px solid #eeeeee;
+  margin-left: 30rpx;
+}
+
+.list:first-child{
+  margin-top: 20rpx;
+  border-top: 1px solid #eeeeee;
+}
+
+.list .title{
+  /* font-size: 1.1em; */
+  color: #333;
+}
+
+.list .access{
+  content: " ";
+  position: absolute;
+	height: 6px;
+	width: 6px;
+	border-width: 2px 2px 0 0;
+	border-color: #aaa;
+	border-style: solid;
+	-webkit-transform: matrix(.71,.71,-.71,.71,0,0);
+	transform: matrix(.71,.71,-.71,.71,0,0);
+	top: 45%;
+	right: 30rpx;
+}
+
+.list .desc{
+  margin-top: 10rpx;
+  font-size: 0.8em;
+  color: #aaa;
+}

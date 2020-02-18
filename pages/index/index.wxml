@@ -34,4 +34,8 @@
   <view style="margin-top: 30rpx; padding: 10rpx 20rpx; background-color:#eeeeee">
     <navigator url="../cloud_database/index">云数据库</navigator>
   </view>
+  <!-- 组件 -->
+  <view style="margin-top: 30rpx; padding: 10rpx 20rpx; background-color:#eeeeee">
+    <navigator url="../component/index">组件</navigator>
+  </view>
 </view>
